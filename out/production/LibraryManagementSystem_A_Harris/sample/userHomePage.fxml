@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="482.0" style="-fx-background-color: #02688B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.userHomePageController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="81.0" layoutY="146.0" radius="67.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="229.0" layoutY="146.0" radius="67.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="377.0" layoutY="146.0" radius="67.0" stroke="BLACK" strokeType="INSIDE" />
+      <JFXButton layoutX="138.0" layoutY="232.0" onAction="#viewCheckedoutItems" style="-fx-background-color: #D40177;" text="VIEW all my checked out items" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="159.0" layoutY="285.0" onAction="#searchBooks" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #D40177;" text="SEARCH book catalog" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <HBox alignment="CENTER" layoutX="-4.0" prefHeight="60.0" prefWidth="474.0" spacing="5.0">
+         <children>
+            <Label text="Hello" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" text="name label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="25.0" layoutY="102.0" prefHeight="82.0" prefWidth="111.0" spacing="10.0">
+         <children>
+            <Label text="You have" textFill="WHITE" />
+            <Label fx:id="checkedOutItemsLabel" alignment="CENTER" text="# of items label" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label text="items checkout out" textFill="WHITE" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="173.0" layoutY="110.0" prefHeight="74.0" prefWidth="106.0" spacing="10.0">
+         <children>
+            <Label text="You have " textFill="WHITE" />
+            <Label fx:id="booksCheckedOutLabel" alignment="CENTER" text="# of books label" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label text="books checked out" textFill="WHITE" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="321.0" layoutY="105.0" prefHeight="82.0" prefWidth="111.0" spacing="10.0">
+         <children>
+            <Label text="You have " textFill="WHITE" />
+            <Label fx:id="mediaCheckedOutLabel" alignment="CENTER" text="# of media checkout" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label text="media checked out" textFill="WHITE" />
+         </children>
+      </VBox>
+      <JFXButton layoutX="160.0" layoutY="327.0" onAction="#searchMedia" style="-fx-background-color: #D40177;" text="SEARCH media catalog" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="372.0" layoutY="232.0" onAction="#logOut" style="-fx-background-color: EAA604;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
